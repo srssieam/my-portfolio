@@ -1,0 +1,101 @@
+*{ box-sizing: border-box;
+ }
+body {
+	margin: 0;
+}
+.pass {hight:130px;
+       width:115px;
+	border-radius:50%;
+}
+h1 {font-size: 2.5rem;
+    text-align: center;
+}
+a {font-size: 1.2rem;
+   color: white;
+   text-decoration: none;
+}
+p  {font-size:1.2rem;
+    text-align: justify;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile  */
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar {background-color: #3DD889;
+	 padding: 1% 7%;
+	 text-align: center;
+}
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.menu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.menu a:hover{
+    background-color: gray;
+}
+.profile {padding:130px 10px;
+   	 position: relative;
+   	 text-align: center;
+}
+.profile .top-weather-icon{
+    position: absolute;
+    heigth: 100px;
+    width: 100px;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+}
+
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+.profile-desc p{
+    color: gray;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+.profile .bottom-weather-icon{
+    position: absolute;
+    heigth: 100px;
+    width: 100px;
+    left: 60px;
+    bottom: 10px;
+    transition: transform 2s;
+}
+
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
